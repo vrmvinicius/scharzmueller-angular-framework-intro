@@ -8,19 +8,30 @@ import { HobbyComponent } from './hobby/hobby.component';
 import { UsernameComponent } from './username/username.component';
 import { UserComponent } from './user/user.component';
 import { InfoComponent } from './info/info.component';
+import { AccountComponent } from './account/account.component';
+import { BlogComponent } from './blog/blog.component';
+import { RouterModule } from '@angular/router';
 
+const appRoutes = [
+   { path: '', component: UserComponent },
+   { path: 'blog', component: BlogComponent },
+   { path: 'account', component: AccountComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
     UsernameComponent,
     HobbyComponent,
     UserComponent,
-    InfoComponent
+    InfoComponent,
+    AccountComponent,
+    BlogComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,9 @@
+<hr/>
+Router Outlet
+<hr/>
+<router-outlet></router-outlet>
+<hr/><hr/>
+
 <p [ngClass]="{cssUpdated: name != 'Vinicius'}">
    My name is {{name}}
 </p>
@@ -21,8 +27,9 @@
 <input type="text" [(ngModel)]="message">
 <p>{{message}}</p>
 
-<p>---Time-to-Practice---</p>
-
+<hr/><hr/>
+Time to Practice
+<hr/>
 <p 
    [ngStyle]="{color: hobbies.length < 3 ? 'red' : ''}"
    [ngClass]="{cssHobbyCounterMoreThanThree: hobbies.length > 3}"
@@ -42,6 +49,10 @@
 </ul>
 
 <p *ngIf="hobbyDeleted">Hobby deleted!</p>
+<hr/>
 
-<p>---Nesting-multiple-components---</p>
+<hr/>
+Nesting-multiple-components
+<hr/>
 <app-user></app-user>
+<hr/>
