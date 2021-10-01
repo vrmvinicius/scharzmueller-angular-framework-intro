@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-  user: string = 'User Works!';
-  
+  username: string = 'ViniciusUsername';
+
   constructor() { }
 }
