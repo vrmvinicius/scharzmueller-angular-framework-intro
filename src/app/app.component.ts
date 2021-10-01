@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'scharzmueller-angular-framework-intro';
+  name = 'Vinicius';
+
+  onChangeName(){
+     this.name = "Vinicius Rafael Migliorança";
+  }
 }
