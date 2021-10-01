@@ -1,4 +1,4 @@
-<p>
+<p [ngClass]="{cssUpdated: name != 'Vinicius'}">
    My name is {{name}}
 </p>
 
@@ -14,3 +14,5 @@
       [id]="'element' + item"
       [ngStyle]="{backgroundColor: getColor(item)}">Element {{ item }}</li>
 </ul>
+
+<app-username></app-username>
