@@ -21,4 +21,8 @@ export class AppComponent {
   getColor(element:number){
      return element % 2 == 0 ? 'red' : 'green';
   }
+
+  onUserWasClicked(usrName: string){
+     alert(`The username is ${usrName}`);
+  }
 }

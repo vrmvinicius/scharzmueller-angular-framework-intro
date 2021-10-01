@@ -15,5 +15,5 @@
       [ngStyle]="{backgroundColor: getColor(item)}">Element {{ item }}</li>
 </ul>
 
-<app-username [username]="'Username: Vinicius'"></app-username>
-<app-username [username]="'Username: Rafael'"></app-username>
+<app-username [username]="'Username: Vinicius'" (userClicked)="onUserWasClicked($event)"></app-username>
+<app-username [username]="'Username: Rafael'" (userClicked)="onUserWasClicked($event)"></app-username>
