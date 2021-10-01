@@ -2,3 +2,8 @@
    color: yellow;
    background-color: white;
 }
+
+.cssHobbyCounterMoreThanThree{
+   color: red;
+   font-style: italic;
+}
