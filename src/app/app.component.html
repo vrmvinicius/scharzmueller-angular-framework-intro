@@ -9,5 +9,7 @@
 
 <button (click)="onAddElement()">New Element</button>
 <ul>
-   <li *ngFor="let item of elements">Element {{ item }}</li>
+   <li 
+      *ngFor="let item of elements"
+      [id]="'element' + item">Element {{ item }}</li>
 </ul>
