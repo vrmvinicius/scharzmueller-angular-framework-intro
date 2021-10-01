@@ -17,3 +17,6 @@
 
 <app-username [username]="'Username: Vinicius'" (userClicked)="onUserWasClicked($event)"></app-username>
 <app-username [username]="'Username: Rafael'" (userClicked)="onUserWasClicked($event)"></app-username>
+
+<input type="text" [(ngModel)]="message">
+<p>{{message}}</p>

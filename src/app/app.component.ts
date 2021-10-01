@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  name = 'Vinicius';
+  name: string = 'Vinicius';
   elements: number[] = [];
+  message: string = '';
 
   onChangeName(){
      this.name = "Vinicius Rafael Migliorança";
