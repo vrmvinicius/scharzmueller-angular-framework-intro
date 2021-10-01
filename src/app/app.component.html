@@ -2,4 +2,8 @@
    My name is {{name}}
 </p>
 
+<p *ngIf="name != 'Vinicius'">
+   Name updated!
+</p>
+
 <button (click)="onChangeName()">Complete the name</button>
