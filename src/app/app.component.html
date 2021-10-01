@@ -5,5 +5,9 @@
 <p *ngIf="name != 'Vinicius'">
    Name updated!
 </p>
-
 <button (click)="onChangeName()">Complete the name</button>
+
+<button (click)="onAddElement()">New Element</button>
+<ul>
+   <li *ngFor="let item of elements">Element {{ item }}</li>
+</ul>
